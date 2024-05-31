@@ -1,4 +1,4 @@
-package Telegram;
+package TelegramService;
 
 public class TelegramBotClient {
 }
