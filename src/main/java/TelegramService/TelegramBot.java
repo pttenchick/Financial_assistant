@@ -10,9 +10,10 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 @Component
 public class TelegramBot extends TelegramLongPollingBot {
 
-    BotConfig config;
+   final BotConfig config;
 
     public TelegramBot(BotConfig config){
+        super(config.getToken());
         this.config = config;
     }
 
@@ -59,10 +60,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         return config.getName();
     }
 
-    @Override
-    public String getBotToken(){
-        return config.getToken();
-    }
 
 
 }
