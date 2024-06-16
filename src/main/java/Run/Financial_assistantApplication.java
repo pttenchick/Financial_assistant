@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TGMoneyBotApplication {
+public class Financial_assistantApplication {
     public static void main(String[] args)  {
-        SpringApplication.run(TGMoneyBotApplication.class, args);
+        SpringApplication.run(Financial_assistantApplication.class, args);
     }
 }
